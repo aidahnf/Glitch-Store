@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AboutUS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Poppins&display=swap" rel="stylesheet">
+    
+
+    <title>Glitch Store</title>
+</head>
+<body> 
+    
+    <div class="header">
+        <a href="./Home.html" class="logo"><img src="./pict/Logo.png" alt=""></a>
+        <nav class="navbar">
+            <a href="./Home.html">Home</a>
+            <a   href="./Catalogue_ALL.html">Catalogue</a>
+            <a class="active" href="./AboutUs.html">About us</a>
+            <a href="./ContactUs.html">Contact us</a>
+
+        </nav>
+        
+        <div class="kanan">
+            <a href="login.html">Account</a>
+            <i class="fas fa-bars" id="bars"></i>
+            <i class="fas fa-search" id="search"></i>
+            <!-- open btn chart -->
+            <button id="open_cart_btn">
+                <img src="./pict/bag.png" alt="" style="width: 30px;">
+            </button>
+            </div>
+    
+    
+    
+    <!-- backdrop -->
+    
+    <div class="backdrop"></div>
+    
+    <div id="sidecart" class="sidecart">
+        <div class="cart_content">
+            <!-- cart header -->
+            <div class="cart_header">
+                <img src="./pict/bag.png" alt="" style="width: 30px;"/>
+                <div class="header_title">
+                    <h2>Your Cart</h2>
+                    <span id="items_num">0</span>
+    
+                </div>
+                <span id="close_btn" class="close_btn">&times;</span>
+            </div>
+            <!-- cart items -->
+            <div class="cart_items"></div>
+            <!-- cart action -->
+            <div class="cart_actions">
+                <div class="subtotal">
+                    <p>SUBTOTAL</p>
+                    <P>$ <span id="subtotal_price">0</span></P>
+                </div>
+                <form action="" onsubmit="val(event)">
+                <button type="submit">Check Out</button></form>
+            </div>
+    
+        </div>
+    
+    </div>
+    
+    </div>
+    
+    
+    
+
+
+<!-- udah header nya -->
+
+<!-- nih umtuk tombol search nya -->
+
+<form action="" id="search-form">
+    <input type="search" placeholder="search here..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+
+</form>
+    <div class="background">
+      
+    <div class="Main">
+        <h1>Welcome to Glitch Store, your ultimate destination for K-pop albums!</h1>
+        <h3>Aida Hanifa, Felicia Meidioktaviana and Jacqueline Season <br> are a passionate team of K-pop enthusiasts who have come <br> together to bring you the best selection of albums.
+        </h3>
+        <h4>Meet Our Team</h4>
+    </div>
+
+    <div class="OurTeam">
+        
+        
+        <div class="OurTeam_img">
+            <a href="https://www.instagram.com/aidaa_hf/">
+                <img src="./IMAGES/aida.jpg" alt="">
+            </a>
+           
+            <h1>Aida Hanifa</h1>
+            <h1>2602078764</h1>
+        </div>
+        <div class="OurTeam_img">
+            <a href="https://www.instagram.com/felicia.oktaviana/">
+                <img src="./IMAGES/cia.jpg" alt="">
+            </a>
+           
+            <h1>Felicia Meidioktaviana</h1>
+            <h1>2602079205</h1>
+        </div>
+        <div class="OurTeam_img">
+            <a href="https://www.instagram.com/jacqueline.season/">
+                <img src="./IMAGES/jeklin.jpg" alt="">
+            </a>
+            
+            <h1>Jacqueline Season</h1>
+            <h1>2602079464</h1>
+        </div>
+
+
+    </div>
+
+    <div class="ROW">
+        <img src="./IMAGES/photostrip.png" alt="">
+     <div class="COLUMN">
+        <div class="Mission">
+           <h1>Our Mission</h1>
+            <div class="Kotak">
+
+                <p>To simplify the experience of buying K-pop albums online for enthusiasts worldwide. We aim to be the go-to destination for fans, offering a wide selection of authentic and officially licensed albums from a variety of K-pop artists. By providing a user-friendly platform, we make it easy for fans to explore and purchase their favourite albums, ensuring a convenient and reliable shopping experience.</p>
+
+            </div>
+
+        </div>
+
+        <div class="Vision">
+            <h1>Our Vision</h1>
+             <div class="Kotak">
+ 
+                 <p>To simplify the experience of buying K-pop albums online for enthusiasts worldwide. We aim to be the go-to destination for fans, offering a wide selection of authentic and officially licensed albums from a variety of K-pop artists. By providing a user-friendly platform, we make it easy for fans to explore and purchase their favourite albums, ensuring a convenient and reliable shopping experience.</p>
+ 
+             </div>
+ 
+         </div>
+    </div>
+
+</div>
+
+
+
+</div>
+
+<div class="footer">
+
+    <div class="footer_nav">
+    <a href="Home.html">Home</a>
+    <a href="Catalogue_ALL.html">Catalogue</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="ContactUs.html">Contact Us</a>
+    <a href="Account.html">Account</a>
+    </div>
+    
+        Follow us :
+        <div class="sosmed">
+            <a href="https://www.instagram.com/aidaa_hf/">
+                <img src="./pict/ig.png" name = "ig" alt="">
+            </a>
+            <a href="https://www.instagram.com/felicia.oktaviana/">
+                <img src="./pict/tw.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/jacqueline.season/">
+                <img src="./pict/wa.png" name = "wa" alt="">
+            </a>
+        </div>
+    
+        Our Partnerships:
+        <div class="partnerships">
+            <img src="./FooterPartnership/VISA.png" alt="">
+            <img src="./FooterPartnership/mastercard.png" alt="">
+            <img src="./FooterPartnership/GOPAY.png"  alt="">
+            <img src="./FooterPartnership/shopeepay.png"  alt="">
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <img src="./pict/cr.png" alt="">
+        Copyright by Aida, Felicia, and Jacqueline.
+        </div>
+
+        <script src="AboutUs.js"></script>
+</body>
+</html>

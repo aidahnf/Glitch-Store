@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glitch Store</title>
+
+    <!-- untuk model tulisannya -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- biar ada icon album and search -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- link agar dapat di swipe bagian album -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+
+
+    <!-- link ke css  -->
+    <link rel="stylesheet" href="HOME.CSS">
+</head>
+
+<body> 
+
+     <!-- header dulu -->
+    
+     <header>
+        <a href="./Home.html" class="logo"><img src="./pict/Logo.png" alt=""></a>
+
+        <nav class="navbar">
+            <a class="active" href="./Home.html">Home</a>
+            <a  href="./Catalogue_ALL.html">Catalogue</a>
+            <a href="./AboutUs.html">About us</a>
+            <a href="./ContactUs.html">Contact us</a>
+
+        </nav>
+
+
+
+        <div class="icons">
+            <a href="./ContactUs.html">Account</a>
+            <i class="fas fa-bars" id="bars"></i>
+            <i class="fas fa-search" id="search"></i>
+
+        </div>
+
+    <!-- backdrop -->
+    
+    <div class="backdrop"></div>
+
+        <button id="open_cart_btn">
+            <img src="./pict/bag.png" alt="" style="width: 30px;">
+        </button>
+        <div id="sidecart" class="sidecart">
+            <div class="cart_content">
+                <!-- cart header -->
+                <div class="cart_header">
+                    <img src="./pict/bag.png" alt="" style="width: 30px;"/>
+                    <div class="header_title">
+                        <h2>Your Cart</h2>
+                        <span id="items_num">0</span>
+        
+                    </div>
+                    <span id="close_btn" class="close_btn">&times;</span>
+                </div>
+                <!-- cart items -->
+                <div class="cart_items"></div> 
+
+                <!-- cart action -->
+                <div class="cart_actions">
+                    <div class="subtotal">
+                        <p>SUBTOTAL</p>
+                        <P>$ <span id="subtotal_price">0</span></P>
+                    </div>
+                    <form action="" onsubmit="val(event)">
+                        <button type="submit">Check Out</button></form>
+                </div>
+        
+            </div>
+        
+        </div>
+            
+
+    </header>
+
+    
+
+
+<!-- udah header nya -->
+
+ 
+
+<!-- nih umtuk tombol search nya -->
+
+<form action="" id="search-form">
+    <input type="search" placeholder="search here..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+
+</form>
+
+
+
+  
+
+ <!-- home album lagi ya -->
+
+ <section class="Home" id="Home">
+
+    <div class="swiper Home-slider">
+
+    <div class="swiper-wrapper wrapper">
+
+        <div class="swiper-slide slide" >
+            <div class="Home-Info">
+                
+               
+
+
+            </div>
+            <div class="Home-img">
+             <video src="./vid/NCT DREAM (Glitch Mode)' MV Teaser.mp4" autoplay loop muted>
+                <a href="#New-album" class="btn">Find more</a>
+             </video>
+
+            </div> <a href="./Glitch.html" ><button>Find More...</button> </a>
+        </div>
+
+        
+        <div class="swiper-slide slide" >
+            <div class="Home-Info">
+                
+               
+
+
+            </div>
+            <div class="Home-img">
+                <video class="HomeSlide" src="./vid/TREASURE - 'HELLO' M_V TEASER.mp4" autoplay muted loop>
+                <a href="#New-album" class="btn">Find more</a>
+            </video>
+
+            </div> <a href="./Treasure.html" ><button>Find More...</button> </a>
+        </div>  
+
+        <div class="swiper-slide slide" >
+            <div class="Home-Info">
+           
+            </div>
+            <div class="Home-img">
+                <video class="HomeSlide" src="./vid/ITZY . In the morning' M-V Teaser 1 @ITZY.mp4"autoplay muted loop>
+                <a href="#New-album" class="btn">Find more</a>
+            </video>
+
+            </div> <a href="ITZY.html" ><button>Find More...</button> </a>
+        </div>  
+
+        <div class="swiper-slide slide" >
+            <div class="Home-Info">
+    
+            </div>
+            <div class="Home-img">
+                <video class="HomeSlide" src="./vid/NewJeans.mp4"autoplay muted loop>                
+                <a href="#New-album" class="btn">Find more</a>
+            </video>
+
+            </div> <a href="NewJeans.html" ><button>Find More...</button> </a> 
+        </div>  
+
+    </div>
+    <div class="swiper-pagination"></div>
+
+</div> 
+
+
+</section>
+
+<!-- masuk ke NEW album yaa -->
+
+<section >
+
+    <div class="Text">
+        <h1>Popular</h1>
+    </div>
+
+    <div class="ROW">
+
+        <div class="Album-card">
+                <a href="./Glitch.html">
+                <img src="./IMAGES/Glitchmode.png" alt="">
+                <h3>“Glitch Mode”<br>NCT DREAM 2nd Album</h3>
+                </a>
+        </div>
+    
+            <div class="Album-card">
+                <a href="./Treasure.html">
+                    <img src="./IMAGES/treasure.png" alt="">
+                    <h3>“THE SECOND STEP : CHAPTER TWO” <br> TREASURE 2ND MINI ALBUM </h3>
+                    </a>
+            </div>
+
+              <div class="Album-card">
+                <a href="./ITZY.html">
+                    <img src="./IMAGES/itzy.png" alt="">
+                    <h3>“IT'z ICY”<br>ITZY 1st Mini Album</h3>
+                    </a>
+            </div> 
+
+            <div class="Album-card">
+                <a href="./NewJeans.html">
+                    <img src="./IMAGES/new jeans copy.png" alt="">
+                    <h3>“New Jeans”<br> NewJeans 1st EP</h3>
+                     </a>
+                 </div>
+    </div>   
+
+</section>
+
+<section class="Home" id="Home">
+
+    <div class="swiper Home-slider">
+
+    <div class="swiper-wrapper wrapper">
+
+        <div class="swiper-slide slide" >
+            <div class="Home-Info">
+  
+            </div>
+            <div class="Home-img">
+             <video src="./vid/BLACKPINK - 'Lovesick Girls' M_V TEASER.mp4" autoplay loop muted>
+                <a href="#New-album" ></a>
+                     
+             </video>
+        
+            </div> <a href="./blackpink.html" ><button>Find More...</button> </a>
+        </div>
+
+
+        
+        <div class="swiper-slide slide" >
+            <div class="Home-Info">
+            </div>
+            <div class="Home-img">
+                <video class="HomeSlide" src="./vid/Stray Kids_(S-Class)_ M_V Teaser 2.mp4" autoplay muted loop>
+                <a href="#New-album" ></a>
+               
+                </video>  
+               
+      
+            </div> <a href="./Straykids.html" ><button>Find More...</button> </a>
+        </div>  
+
+       
+        <div class="swiper-slide slide" >
+            <div class="Home-Info">
+
+            </div>
+            <div class="Home-img">
+                <video class="HomeSlide" src="./vid/ROSÉ - COMING SOON.mp4"autoplay muted loop>
+                <a href="#New-album" ></a>
+            </video>
+
+            </div> <a href="./R.html" ><button>Find More...</button> </a>
+        </div>  
+
+        <div class="swiper-slide slide" >
+            <div class="Home-Info">
+            </div>
+            <div class="Home-img">
+                <video class="HomeSlide" src="./vid/[Teaser] IU-LILACMV Teaser.mp4"autoplay muted loop>
+
+                <a href="#New-album" ></a>
+            </video>
+
+            </div> <a href="./lilac.html" ><button>Find More...</button> </a>
+        </div>  
+
+
+    </div>
+    <div class="swiper-pagination"></div>
+
+</div> 
+
+
+</section>
+
+<section >
+
+    <div class="Text">
+        <h1>Popular</h1>
+    </div>
+
+    <div class="ROW">
+
+        <div class="Album-card">
+            <a href="R.html">
+                <img src="./IMAGES/R.png" alt="">
+                <h3>“R” <br>Rosé First Single Album</h3>
+         
+                </a>
+        </div>
+    
+            <div class="Album-card">
+                <a href="blackpink.html">
+                    <img src="./IMAGES/blackpink.jpg" alt="">
+                    <h3>“The Album” <br> Blackpink Debut Album</h3>
+                    
+                     </a>
+            </div>
+            
+            <div class="Album-card">
+                <a href="lilac.html">
+                    <img src="./IMAGES/lilac.png" alt="">
+                    <h3>“LILAC” <br>(Photobook ver.)<br>IU 5th Album</h3>
+                    
+                    </a>
+                 </div>
+    
+    
+            <div class="Album-card">
+                <a href="Straykids.html">
+                    <img src="./IMAGES/stray.png" alt="">
+                    <h3>“IN生 (in Life)” <br>Stray Kids <br> (Standard Ver.)</h3>
+                     </a>
+            </div> 
+          
+    
+    </div>   
+
+</section>
+
+
+
+    <div class="footer">
+        Follow us :
+        <div class="sosmed">
+            <a href="https://www.instagram.com/aidaa_hf/">
+                <img src="./pict/ig.png" name = "ig" alt="">
+            </a>
+            <a href="https://www.instagram.com/felicia.oktaviana/">
+                <img src="./pict/tw.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/jacqueline.season/">
+                <img src="./pict/wa.png" name = "wa" alt="">
+            </a>
+        </div>
+        
+      Our Partnerships:
+    <div class="partnerships">
+        <img src="./FooterPartnership/VISA.png" alt="">
+        <img src="./FooterPartnership/mastercard.png" alt="">
+        <img src="./FooterPartnership/GOPAY.png"  alt="">
+        <img src="./FooterPartnership/shopeepay.png"  alt="">
+    </div>
+
+    </div>
+
+    <div class="copyright">
+        <img src="./pict/cr.png" alt="">
+        Copyright by Aida, Felicia, and Jacqueline.
+    </div>
+
+
+
+  
+
+ 
+     <!-- link agar dapat swipe -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="HOME.js"></script>
+</body>
+
+
+</html>

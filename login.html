@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glitch Store</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="Home.html">
+                <img src="./pict/Logo.png" alt="">
+            </a>
+        </div>
+        <div class="footer_nav">
+            <a href="Home.html">Home</a>
+            <a href="Catalogue_ALL.html">Catalogue</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="ContactUs.html">Contact Us</a>
+            
+        </div>
+
+        <div class="kanan">
+            <a class = "active" href="login.html">Account</a>
+            <i class="fas fa-search" id="search"></i>
+        </div> 
+    </div>
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i> 
+    </form>
+
+    <div class="bigContainer">
+        <img src="./pict/renjun.png" name= "renjun"alt="">
+        <div class="form">
+            <form action="profile.html" onsubmit="val()">
+                <h1>Log In</h1>
+                <input type="email" name="" id="email" placeholder="Email" required>
+                <input type="password" name=""  id="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+                
+            </form>
+
+            <div class="loginHere">
+                <p>Don't have an account? <a href="register.html">Create an account here!</a></p>         
+            </div>
+        </div>
+        <img src="./pict/haechan.png" name = "haechan" alt="">
+    </div>
+
+    <div class="footer">
+
+        <div class="footer_nav">
+            <a href="Home.html">Home</a>
+            <a href="Catalogue_ALL.html">Catalogue</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="Account.html">Account</a>
+        </div>
+        
+        Follow us :
+        <div class="sosmed">
+            <a href="https://www.instagram.com/aidaa_hf/">
+                <img src="./pict/ig.png" name = "ig" alt="">
+            </a>
+            <a href="https://www.instagram.com/felicia.oktaviana/">
+                <img src="./pict/tw.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/jacqueline.season/">
+                <img src="./pict/wa.png" name = "wa" alt="">
+            </a>
+        </div>
+        
+        Our Partnerships:
+        <div class="partnerships">
+            <img src="./FooterPartnership/VISA.png" alt="">
+            <img src="./FooterPartnership/mastercard.png" alt="">
+            <img src="./FooterPartnership/GOPAY.png"  alt="">
+            <img src="./FooterPartnership/shopeepay.png"  alt="">
+        </div>
+    </div>
+        
+    <div class="copyright">
+        <img src="./pict/cr.png" alt="">
+        Copyright by Aida, Felicia, and Jacqueline.
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>

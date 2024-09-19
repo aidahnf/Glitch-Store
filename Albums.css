@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    background-color: #E5E1D8;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header{
+    width: 100vw;
+    height: 100px;
+    background-color: #B9CFBA;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .footer_nav a{
+    font-family: 'Poppins', sans-serif;
+    color: #e76565;
+}
+
+.kanan a{
+    color: #e76565;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.header .footer_nav a:hover{
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+
+.header .kanan a:hover{
+    background-color: #EEEEEE;
+    color: #e76565;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.header .footer_nav a.active{
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+
+.header .kanan i{
+    cursor: pointer;
+    margin-left: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    width: 3.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+    margin-right: 5rem;
+    
+}
+
+.header .kanan i:hover{
+    color: #fff;
+    background: #e76565;
+    transform: rotate(360deg);
+}
+
+.logo img{
+    width: 180px;
+    height: auto;
+    transform: translate(20%,9%);
+}
+
+
+.ROW{
+    display: flex;
+    flex-direction: row;
+    padding-top: 150px;
+    /* justify-content: space-between; */
+    padding-right: 95px;
+    padding-bottom: 90px;
+}
+
+.ROW img{ 
+    width: auto;
+    height: 450px;;
+    margin :auto;
+}
+
+.container{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    width: 160px;
+    height: 50px;
+    font-size: 20px;
+    border: 2px solid #34594C;;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #34594C;
+    flex-direction: row;
+    border-radius: 50px;
+    justify-content: space-evenly;
+   
+
+}
+.AddtoCartCounter {
+    justify-content: space-between;
+     margin: 0 85px;
+    display: flex;
+    text-align: center;
+    
+
+}
+.AtC button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    width: 280px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #34594C;
+    color: #E5E1D8;
+    border-radius: 50px;
+}
+ 
+.AtC button:hover {
+    background-color: #E5E1D8;
+    color: #34594C;
+}
+
+
+
+.MainText h1{
+    text-align: left;
+    font-family: 'Cormorant', serif;
+    font-size: 45px;    
+
+    color: #34594C;
+    font-style: italic;
+    
+}
+.MainText {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding-right: 90px;
+    
+}
+.MainText h4{
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px; 
+    color: #487A69;
+    padding-top: 20px;
+    float: left;
+    text-align: left;
+    font-weight: lighter;
+}
+.MainText h3{
+    float: left;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px; 
+    color: #34594C;
+    margin-bottom: 35px;
+    font-weight: 400;
+   
+}
+.footer{
+    width: 100vw;
+    height: 400px;
+    background-color: #34594C;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    gap: 4%;
+}
+.footer_nav a{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.partnerships{
+    display: flex;
+    gap: 50px;
+}
+
+
+.partnerships img{
+    height: 65px;
+}
+
+.sosmed{
+    display: flex;
+    gap: 50px;
+}
+
+.sosmed img{
+    height: 45px;
+}
+
+
+.copyright{
+    width: 100vw;
+    height: 100px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: poppins;
+    display: flex;
+}
+
+.copyright img{
+    width: 30px;
+}
+
